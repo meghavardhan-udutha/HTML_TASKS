@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .outerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    text-align: center;
+    margin: 4px;
+}
+
+.innerdiv{
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    margin: auto;
+    border-radius: 50%;
+    
+}
+
+h1,pre{
+    text-align: center;
+}
+pre{
+    color: red;
+    font-size: 20px;
+}
+#colorname{
+    background-color: red;
+}
+
+#hexa{
+    background-color: #000ff0;
+}
+
+#rgb{
+    background-color: rgb(100,100,100);
+}
+#rgba{
+    background-color: rgba(100, 100, 100, 0.5);
+}
+#hsl{
+    background-color: hsl(300, 20%, 20%);
+}
+#hsla{
+    background-color: hsla(300, 20%, 20%,0.5);
+}
+
+
+.gradient{
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    margin: 4px;
+}
+
+#linear-gradient{
+    background: linear-gradient(to top,red,green,blue);
+}
+
+#repeating-linear-gradient{
+    background: repeating-linear-gradient(black,white 10px 10px);
+}
+
+#radial-gradient{
+    background: radial-gradient(red,yellow,blue);
+}
+
+#repeating-radial-gradient{
+    border-radius: 50%;
+    background: repeating-radial-gradient(black,white 10px 10px);
+}
+
+.tp{
+    color: red;
+    text-align: center;
+    text-decoration: none;
+}
+
+p{
+    text-indent: 30px;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    line-height: 5;
+}
+
+.fp{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+}
+
+.main{
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <h1>COLOR THEORY</h1>
+    <!-- <pre>
+        colorname
+        hexa decimal format - #6chars a-f 0-9
+        rgb - red blue green 0-225
+        rgba - red blue green alpha for transparancy 0.1 - 1
+        hsl - hue saturation lightness (%)
+        hsla - hue saturation lightness alpha
+    </pre> -->
+
+    <div class="main">
+        <div class="outerdiv">
+    
+            <div class="card">
+                <h2>color name</h2>
+                <div class="innerdiv" id="colorname">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <h2>HEXA DECIMAL</h2>
+                <div class="innerdiv" id="hexa">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <h2>RGB</h2>
+                <div class="innerdiv" id="rgb">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <h2>RGBA</h2>
+                <div class="innerdiv" id="rgba">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <h2>HSL</h2>
+                <div class="innerdiv" id="hsl">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <h2>HSLA</h2>
+                <div class="innerdiv" id="hsla">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h1>Multiple colors</h1>
+    <pre>
+        linear-gradient
+        repeating-linear-gradient
+        radial-gradient
+        repeating-radial-gradient
+    </pre>
+    <div class="outerdiv">
+        <div class="gradient" id="linear-gradient"></div>
+        <div class="gradient" id="repeating-linear-gradient"></div>
+        <div class="gradient" id="radial-gradient"></div>
+        <div class="gradient" id="repeating-radial-gradient"></div>
+    </div>
+
+    <h1>Typography</h1>
+    <pre>
+        text-properties:
+        color
+        text-align
+        text-decoration 
+        text-indent 
+        text-transform 
+        text-shadow 
+        letter-spacing 
+        word-spacing 
+        line-height 
+    </pre>
+
+    <h2 class="tp">Text Properties</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit repellendus nobis voluptate, est iusto?</p>
+
+    <pre>
+        font-properties:
+        font-size
+        font-family 
+        font-style 
+        font-weight
+    </pre>
+
+    <h2 class="fp">Font Properties</h2> -->
+</body>
+</html>
