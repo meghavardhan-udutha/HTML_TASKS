@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* Practice all selectors */
+* { font-family: Arial; }
+
+h1 { color: blue; }
+
+.card { border: 2px solid black; padding: 10px; }
+
+#main { background: lightyellow; }
+
+div p { color: red; }
+
+div > p { font-weight: bold; }
+
+h1 + p { background: lightblue; }
+
+h1 ~ p { border: 1px dashed gray; }
+
+input[type="text"] { border: 2px solid green; }
+
+button:hover { background: black; color: white; }
+
+li:first-child { color: red; }
+
+li:last-child { color: green; }
+
+li:nth-child(2) { color: blue; }
+
+h2::before { content: "👉 "; }
+
+h2::after { content: " ✔"; }
+
+p::first-letter { font-size: 24px; }
+
+</style>
+</head>
+<body id="main">
+
+<h1>Selectors Practice</h1>
+<p>Paragraph after h1</p>
+
+<div class="card">
+    <p>Child paragraph</p>
+    <span>
+        <p>Nested paragraph</p>
+    </span>
+</div>
+
+<input type="text" placeholder="Type here">
+<button>Hover Me</button>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<h2>Heading</h2>
+<p>Sample text for pseudo-element</p>
+
+</body>
+</html>
